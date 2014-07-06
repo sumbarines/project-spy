@@ -1,0 +1,5 @@
+<h1>Create a new Project</h1>
+<%= form_for @project, url: projects_url do |f| %>
+  <%= render partial: "form", locals: {f: f} %>
+  <%= f.submit "Save" %>
+<% end %>
